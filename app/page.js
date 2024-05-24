@@ -27,7 +27,7 @@ const data = await getDogPicture();
 export default async function Home() {
   const data = await getUsers ();
   return (
-    <main  className="ml-5">
+    <main>
       <h1>Usuarios</h1>
       <ul>
         {data.map((user) => (
