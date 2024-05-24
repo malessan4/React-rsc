@@ -27,7 +27,7 @@ const data = await getDogPicture();
 export default async function Home() {
   const data = await getUsers ();
   return (
-    <main>
+    <main  className="p-10">
       <h1>Usuarios</h1>
       <ul>
         {data.map((user) => (
@@ -36,8 +36,8 @@ export default async function Home() {
               style={{border: '1px solid black'}}
               href={`/users/${user.id}`}
             >
-              <h2>{user.name}</h2>
-              <p>{user.email}</p>
+            <h2>{user.name}</h2>
+            <p>{user.email}</p>
             </Link>
           </li>
         ))}
